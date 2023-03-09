@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Book Website</title>
+    <style>
+      .video,
+      .book {
+        /* display: flex; */
+        width: 300px;
+        float: left;
+        margin: 10px;
+      }
+
+      .video img,
+      .book img {
+        width: 100%;
+        height: auto;
+      }
+
+      .book a {
+        display: block;
+        text-align: center;
+        padding: 5px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+      }
+      .book a:hover {
+        background-color: #fff;
+        color: #333;
+      }
+      .heading {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: bolder;
+        text-align: center;
+      }
+      .video a img:hover {
+        transition: 1s;
+      }
+      .video a img:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        transition: 1s ease;
+      }
+    </style>
+    <script>
+      function openlink(content) {
+        window.open(content);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="heading"><h2>Explore books here</h2></div>
+    <div class="book">
+      <img src="300-SM966044.jpg" />
+      <a href="#">Think And Grow Rich</a>
+    </div>
+    <div class="book">
+      <img src="300-SM966044.jpg" />
+      <a href="#">The Fountain Head</a>
+    </div>
+    <div class="book">
+      <img src="300-SM966044.jpg" />
+      <a href="#">Rich Dad Poor Dad</a>
+    </div>
+    <div class="book">
+      <img src="300-SM966044.jpg" />
+      <a href="#">As a Man Thinketh</a>
+    </div>
+   
+    <div class="heading"><h2>Explore vedio links here</h2></div>
+    <div class="video">
+      <a onclick="openlink('https://www.youtube.com/watch?v=ANzPM5-lwXc')"
+        ><img src="spotify.jpg" alt=""
+      /></a>
+    </div>
+    <div class="video">
+      <a onclick="openlink('https://www.youtube.com/watch?v=zJSY8tbf_ys')"
+        ><img src="frontenddev.jpg" alt=""
+      /></a>
+    </div>
+    <div class="video">
+      <a onclick="openlink('https://www.youtube.com/watch?v=EyEqWFvLDT8')"
+        ><img src="python.jpg" alt=""
+      /></a>
+    </div>
+    <div class="video">
+      <a onclick="openlink('https://www.youtube.com/watch?v=chx9Rs41W6g')"
+        ><img src="javascript.jpg" alt=""
+      /></a>
+    </div>
+  </body>
+</html>
