@@ -87,7 +87,7 @@
 		}
 		
 		nav .dropdown-content a:hover {
-			background-color: #ddd;
+			background-color: #d25f5f;
 		}
 		
 		nav .dropdown:hover .dropdown-content {
@@ -102,11 +102,45 @@
             padding: 0;
             border: none;
         }
-        footer{
-            margin: 4px;
-            padding: 1px;
-            border:3px 3px 0px 3px solid black;
-        }
+        footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media li a i {
+  font-size: 20px;
+}
         #contentFrame{
             width:1345px;
             height:100%;
@@ -120,6 +154,11 @@
         <center>
             <h1>Welcome to <span style="color:rgba(141, 141, 244, 0.848)">Digital</span> Library</h1>
             <center>
+                          <h4><?php 
+                                 $incvar = $increment["inc"];
+                                 $invar++;
+                                 echo $invar; 
+                                 ?></h4>
                         <nav>
                             <a onclick="changecontent('home.html')">Home</a>
                             <a  onclick="changecontent('About.html')">About us</a>
@@ -127,18 +166,44 @@
                                 <button class="dropbtn">Dashboard</button>
                                 <div class="dropdown-content">
                                     <a  onclick="changecontent('profile.php')">Profile</a>
-                                    <a  onclick="changecontent('')">Yours List</a>
+                                    <a  onclick="changecontent('showyourslist.php')">Yours List</a>
                                     <a href="logout.php">Logout</a>
                                 </div>
                             </div>
-                            <a onclick="changecontent('')">Contact</a>
+                            <a onclick="changecontent('contact.html')">Contact</a>
                             <a onclick="changecontent('Help.html')">FAQS</a>
+                            <p><?php echo "Click here to see the latest updates"; ?> hii</p>
                         </nav>
     </header>
     <main>
         <iframe id="contentFrame" src="image.html"></iframe>
     </main>
-    <footer><marquee  behavior="" direction="right"><h3 style="margin:0;">welcome to digital library</h3> </marquee></footer>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>About Us</h3>
+              <p>We are a company that provides high-quality products and services to our customers. Our goal is to exceed your expectations and earn your trust.</p>
+            </div>
+            <div class="col-md-3">
+              <h3>Useful Links</h3>
+              <ul>
+                <li><a onclick="changecontent('About.html')">About us</a></li>
+                <li><a onclick="changecontent('Help.html')">FAQs</a></li>
+                <li><a onclick="changecontent('contact.html')">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>Follow Us</h3>
+              <ul class="social-media">
+                <li><a href="https://www.instagram.com/?hl=en"><img src="download.jpg" alt="" width="20ox"></i></a></li>
+                <li><a href="https://www.youtube.com/"><img src="youtube.jpg" alt="" width="25px"></a></li>
+                <li><a href="https://twitter.com/?lang=en-in"><img src="twitterimg.png" alt=""width="20px"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     <script>
         function changecontent(contentPath){
             var frame = document.getElementById("contentFrame");
