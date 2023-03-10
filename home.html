@@ -3,6 +3,9 @@
   <head>
     <title>My Book Website</title>
     <style>
+      body{
+        background-color: #f2f2f2;
+      }
       .video,
       .book {
         /* display: flex; */
@@ -48,28 +51,33 @@
       function openlink(content) {
         window.open(content);
       }
+    
     </script>
   </head>
   <body>
     <div class="heading"><h2>Explore books here</h2></div>
     <div class="book">
-      <img src="300-SM966044.jpg" />
-      <a href="#">Think And Grow Rich</a>
+      <img src="book.png" />
+      <a href="pdf_script.php?id=1">Englishtest.pdf</a>
+      <a href="yourslist.php?val=Englishtest.pdf">Add to yourList</a>
     </div>
     <div class="book">
-      <img src="300-SM966044.jpg" />
-      <a href="#">The Fountain Head</a>
+      <img src="book.png" />
+      <a href="pdf_script.php?id=2">Indian_Constitutional_History.pdf</a>
+      <a href="yourslist.php?val=Indian_Constitutional_History.pdf">Add to yourList</a>
     </div>
     <div class="book">
-      <img src="300-SM966044.jpg" />
-      <a href="#">Rich Dad Poor Dad</a>
+      <img src="book.png" />
+      <a  href="pdf_script.php?id=3">Man's Search for Meaning.pdf</a>
+      <a href="yourslist.php?val=Man's Search for Meaning.pdf">Add to yourList</a>
     </div>
     <div class="book">
-      <img src="300-SM966044.jpg" />
-      <a href="#">As a Man Thinketh</a>
+      <img src="book.png" />
+      <a  href="pdf_script.php?id=4">Fundamental rights.pdf</a>
+      <a href="yourslist.php?val=Fundamental rights.pdf">Add to yourList</a>
     </div>
-   
-    <div class="heading"><h2>Explore vedio links here</h2></div>
+
+    <div class="heading"><h2>Explore video links here:</h2></div>
     <div class="video">
       <a onclick="openlink('https://www.youtube.com/watch?v=ANzPM5-lwXc')"
         ><img src="spotify.jpg" alt=""
